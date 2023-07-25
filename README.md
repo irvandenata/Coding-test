@@ -19,7 +19,7 @@ to test that code we can give 4 scenario
 4. x is a negative value and y is a positive value
 
 
-##Question #2 (SQL)
+## Question #2 (SQL)
 
 ● Select USA.NAME, EU.NAME From USA, EU Where USA.ID = EU.ID
 
@@ -48,7 +48,7 @@ Cindy	Thomas
 
 Thomas	Thomas
 
-##Question #4 (performance)
+## Question #4 (performance)
 
 Case 1 has a longer execution time than case 2, because if bagA has a large number of elements, the loop becomes much better
 
