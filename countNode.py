@@ -1,6 +1,25 @@
-def intersect(bagA, bagB):
-    result = [ o for o in bagA if o in bagB  ]
-    return result
+class Node:
+    def __init__(self):
+        self.right = None
+        self.left = None
 
+def calculateMaxDepth(n):
+    if n is None:
+        return 0
+    else:
+        lDepth = calculateMaxDepth(n.left)
+        rDepth = calculateMaxDepth(n.right)
 
-print(intersect([1,2,3,4,2],[1,2,3]))
+        if lDepth > rDepth:
+            return lDepth+1
+        else:
+            return rDepth+1
+        
+node = Node()
+node.left = Node()
+node.left.left = Node()
+node.left.left.left = Node()
+node.left.left.left.left = Node()
+node.left.left.left.left.left = Node()
+
+print(calculateMaxDepth(node))
